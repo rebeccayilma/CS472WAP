@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&family=Zen+Loop&display=swap');
+body{
+  display:flex; 
+  flex-direction:column;
+  align-items:center;
+  font-family: 'Roboto', sans-serif;
+}
+h2{
+  font-family: 'Zen Loop', cursive;
+  font-weight: bold;
+  font-size: 2em;
+}
+.profile_picture{
+  width:12em; 
+  height: 12em;
+  border-radius: 2%;
+}
+.bold{
+  font-weight: bold;
+}
+.rows{
+  display: flex;
+}
+.columns{
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
