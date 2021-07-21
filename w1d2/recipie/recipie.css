@@ -1,0 +1,33 @@
+body{
+  font-size: 11pt;
+  color: #404040;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
+}
+a{
+  color: #A4A400;
+}
+.headings{
+  color: #A4A400;
+  background-color: #F0F0F0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-decoration: underline;
+  font-size: 18pt;
+}
+#top_header{
+  font-size: 22pt;
+  text-align: center;
+  font-weight: bold;
+}
+
+.inner_list{
+  list-style:circle;
+}
+.bold{
+  font-weight: bold;
+}
+.user_comments{
+  font-style: italic;
+  background-color: #FFFFA8;
+  text-indent: 1em;
+}
