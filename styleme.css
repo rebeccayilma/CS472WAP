@@ -28,3 +28,21 @@ h2{
   justify-content: center;
   align-items: center;
 }
+a{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+}
+p:first-letter{
+font-weight: bold;
+font-size: 1.5em;
+color: orange;
+margin-right: 0.1em;
+}
+.box{
+  border-radius: 1em;
+  background-color: antiquewhite;
+  padding: 0.7em;
+  margin: 2% 0 2%;
+}
