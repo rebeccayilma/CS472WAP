@@ -1,0 +1,23 @@
+body{
+  background-image: url("background.png");
+  font-size: 8pt;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+.banner{
+  background-image: url("bannerbg.png");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner>img{
+  height: 50px;
+}
+h1{
+  font-size: 24pt;
+  font-weight: bolder;
+  font-family: Tahoma, Verdana, sans-serif;
+  text-shadow: 3px 3px 2px #999999;
+}
