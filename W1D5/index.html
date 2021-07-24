@@ -8,7 +8,16 @@
 </head>
 <body>
   <script>
-    console.log("89jh")
+    
+    function myFunctionTest(expected, found) {
+      if (expected === found) {
+        return "TEST SUCCEEDED";
+      } else {
+        return "TEST FAILED.  Expected " + expected + " found " + found;
+      }
+    }
+
+
     function max(x,y){
       if (x>y) {
         return x;
@@ -16,6 +25,9 @@
         return y;
       }
     }
+    console.log("Expected output of max(43,10) is 43  " + myFunctionTest(43, max(43, 10)));
+
+
     function maxOfThree(a,b,c) {
       let max;
       if (a>b && a>c) {
@@ -28,6 +40,9 @@
       }
       return max;
     }
+    console.log("Expected output of maxOfThree(43,10,78) is 78  " + myFunctionTest(78, maxOfThree(43, 10,78)));
+
+
     function isVowel(a){
       if (a=="a" || a=="e" || a=="i" || a=="o" || a=="u") {
         return true
@@ -35,6 +50,10 @@
         return false;
       }
     }
+    console.log("Expected output of isVowel(h) is false  " + myFunctionTest(false, isVowel("h")));
+    console.log("Expected output of isVowel(e) is true  " + myFunctionTest(true, isVowel("e")));
+
+
     function sum(arr){
       let sum = 0;
       for(var i = 0; i < arr.length; i++){
@@ -42,6 +61,9 @@
       }
       return sum;
     }
+    console.log("Expected output of sum([1,2,3,4]) is 10  " + myFunctionTest(10, sum([1,2,3,4])));
+
+
     function multiply(arr){
       let product=1;
       for(var i = 0; i < arr.length; i++){
@@ -49,18 +71,20 @@
       }
       return product;
     }
+    console.log("Expected output of multiply([1,2,3,4]) is 24  " + myFunctionTest(24, multiply([1,2,3,4])));
+
+
     function findLongestWord(arr){
-      let word;
-      for (let i = 0; i < arr.length; i++) {
-        if (word.length < arr[i].length) {
-          word = arr[i];
-        }
-      }
-      return word;
+      return arr.reduce((a, b) => a.length < b.length ? b : a, "");
     }
+    console.log("Expected output of findLongestWord([abebech,kebede,chi]) is abebech  " + myFunctionTest("abebech", findLongestWord(["abebech","kebede","chi"])));
+
+
     function filterLongWords(arr,num) {
-      return arr.filter(w=>w.length >= num);      
-    }
+      return arr.filter(w => w.length >= num);
+    }   
+    console.log("Expected output of filterLongWords([abebech,kebede,chi],6) is kebede  " + myFunctionTest("kebede", filterLongWords(['abebe','kebede','chi'],6).join('')));
+
     function jsfiddle() {
       const a = [1,3,5,3,3]; 
       const b = a.map(function(elem, i, array) {
