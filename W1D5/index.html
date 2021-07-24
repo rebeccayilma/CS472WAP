@@ -78,12 +78,14 @@
       return arr.reduce((a, b) => a.length < b.length ? b : a, "");
     }
     console.log("Expected output of findLongestWord([abebech,kebede,chi]) is abebech  " + myFunctionTest("abebech", findLongestWord(["abebech","kebede","chi"])));
+    
 
 
     function filterLongWords(arr,num) {
       return arr.filter(w => w.length >= num);
     }   
     console.log("Expected output of filterLongWords([abebech,kebede,chi],6) is kebede  " + myFunctionTest("kebede", filterLongWords(['abebe','kebede','chi'],6).join('')));
+    console.log("Expected output of filterLongWords([abebech,kebede,chi],6) is abebe,kebede  " + myFunctionTest("abebe,kebede", filterLongWords(['abebe','kebede','chi'],4).join(',')));
 
     function jsfiddle() {
       const a = [1,3,5,3,3]; 
