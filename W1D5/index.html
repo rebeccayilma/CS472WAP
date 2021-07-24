@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    console.log("89jh")
+    function max(x,y){
+      if (x>y) {
+        return x;
+      }else{
+        return y;
+      }
+    }
+    function maxOfThree(a,b,c) {
+      let max;
+      if (a>b && a>c) {
+        max = a;
+      }if(b>a && b>c){
+        max = b;
+      } 
+      else {
+        max = c;
+      }
+      return max;
+    }
+    function isVowel(a){
+      if (a=="a" || a=="e" || a=="i" || a=="o" || a=="u") {
+        return true
+      } else {
+        return false;
+      }
+    }
+    function sum(arr){
+      let sum = 0;
+      for(var i = 0; i < arr.length; i++){
+        sum += arr[i];
+      }
+      return sum;
+    }
+    function multiply(arr){
+      let product=1;
+      for(var i = 0; i < arr.length; i++){
+        product *= arr[i];
+      }
+      return product;
+    }
+    function findLongestWord(arr){
+      let word;
+      for (let i = 0; i < arr.length; i++) {
+        if (word.length < arr[i].length) {
+          word = arr[i];
+        }
+      }
+      return word;
+    }
+    function filterLongWords(arr,num) {
+      return arr.filter(w=>w.length >= num);      
+    }
+    function jsfiddle() {
+      const a = [1,3,5,3,3]; 
+      const b = a.map(function(elem, i, array) {
+        return elem + 10;
+      })
+      document.writeln(b.toString() + "<br/>");
+      const c = a.filter(function(elem, i, array){
+        return elem == 3;});
+      document.writeln(c.toString() + "<br/>");
+      const d = a.reduce(function(prevValue, elem, i, array){
+        return prevValue * elem;
+      });
+      document.writeln(d+ "<br/>");
+
+      const d2 = a.find(function(elem) {return elem > 1;}); //3
+      const d3 = a.findIndex(function(elem) {return elem > 1;}); //1
+      document.writeln(d2+ "<br/>");
+      document.writeln(d3);      
+    }
+  </script>
+</body>
+</html>
