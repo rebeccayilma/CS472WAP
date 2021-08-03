@@ -23,6 +23,7 @@ class SavingsAccount extends Account {
 
   endOfMonth() {
     //Interest added SavingsAccount 2: balance: 102.5 interest: 2.5
+    
     const oldB = this._balance;
     this.addInterest();
 
