@@ -1,0 +1,13 @@
+.container_wrapper {
+  position: fixed;
+}
+#fields {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+button {
+  background-color: darkcyan;
+  width: 80px;
+}

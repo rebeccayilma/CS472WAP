@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="circle.js"></script>
+  <link rel="stylesheet" href="circle.css">
+  <title>Circles</title>
+</head>
+<body>
+  <div class="container_wrapper">  
+    
+    <div id="fields">
+      <label>Width</label>
+      <input
+        id="width"
+        type="number"
+        name="width"
+        placeholder="radius in px"
+      />
+      <label>Growth Amount</label>
+      <input
+        id="growth"
+        type="number"
+        name="growthamount"
+        placeholder="growth in px"
+      />
+      <label>Growth Rate</label>
+      <input
+        id="rate"
+        type="number"
+        name="growRate"
+        placeholder="interval in ms"
+      />
+      <label>Number Circles</label>
+      <input
+        id="circle"
+        type="number"
+        name="circle"
+        placeholder="number of circles"
+      />
+      <button id="start">Start</button>
+    </div>
+    <div class="ccont">
+      <div id="circles"></div>
+    </div>
+  </div>
+</body>
+</html>
