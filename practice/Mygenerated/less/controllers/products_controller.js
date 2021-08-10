@@ -4,6 +4,7 @@ exports.getAddProduct = (req,res)=>{
 };
 exports.addProduct = (req,res)=>{
   const prod = new Product(req.body.name,req.body.price);
+  console.log(req.body);
   prod.add();
   res.redirect('/');
 };
